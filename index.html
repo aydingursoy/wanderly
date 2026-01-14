@@ -3,158 +3,187 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>WanderW — Adventure Trip Planner</title>
-  <meta name="description" content="A premium, beginner-friendly travel planner that generates a complete day-by-day adventure trip. Fully usable for free. Coming soon." />
-  <link rel="icon" href="logo.png" />
+  <title>Wonderly — Adventure Trip Planner</title>
+  <meta name="description" content="Wonderly builds a complete day-by-day trip plan with costs, confidence scores, and a prep checklist. Fully usable for free." />
+  <link rel="icon" href="assets/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="brand">
-      <img class="logo" src="logo.png" alt="WanderW logo" />
-      <span class="brand-name">WanderW</span>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img class="logo" src="assets/logo.png" alt="Wonderly logo" />
+        <span class="brand-name">Wonderly</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a class="btn btn-ghost" href="#waitlist">Join waitlist</a>
+      </nav>
     </div>
-    <nav class="nav-links">
-      <a class="nav-link" href="#how">How it works</a>
-      <a class="nav-link" href="#features">What you get</a>
-      <a class="ghost" href="#waitlist">Join the waitlist</a>
-    </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-left">
-        <div class="pill">Premium Adventure Guide • Fully usable free</div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="badge">Fully usable free • Premium adventure planning</div>
+          <h1>Stop overthinking travel.<br/>Get a plan you can follow.</h1>
+          <p class="lead">
+            Tell Wonderly your budget, dates, and vibe. We generate a complete day‑by‑day itinerary with
+            cost estimates, safety/health confidence, and a simple “Accept Trip” checklist.
+          </p>
 
-        <h1>Plan a full trip in minutes —<br/>with confidence.</h1>
+          <div class="cta">
+            <a class="btn btn-primary" href="#waitlist">Get early access</a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
 
-        <p class="sub">
-          Tell us your budget, dates, and vibe. WanderW builds a complete day-by-day itinerary with
-          cost estimates, safety & health confidence, and a preparation checklist.
-        </p>
-
-        <div class="cta-row">
-          <a class="primary" href="#waitlist">Get early access</a>
-          <a class="secondary" href="#how">See how it works</a>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-kicker">Day-by-day</div>
+              <div class="stat-value">Morning • Afternoon • Evening</div>
+            </div>
+            <div class="stat">
+              <div class="stat-kicker">Confidence</div>
+              <div class="stat-value">Safety • Health • Feasibility</div>
+            </div>
+            <div class="stat">
+              <div class="stat-kicker">Planning Mode</div>
+              <div class="stat-value">Book + pack checklist</div>
+            </div>
+          </div>
         </div>
 
-        <div class="trust">
-          <div class="trust-item">
-            <div class="trust-title">Day-by-day plan</div>
-            <div class="trust-desc">Morning / Afternoon / Evening blocks</div>
+        <div class="hero-card" aria-label="Example itinerary card">
+          <div class="card-top">
+            <div>
+              <div class="card-title">Example trip</div>
+              <div class="card-sub">7 days • Solo • Adventurous</div>
+            </div>
+            <div class="chip">Surprise me ✨</div>
           </div>
-          <div class="trust-item">
-            <div class="trust-title">Confidence scores</div>
-            <div class="trust-desc">Safety + health + feasibility</div>
-          </div>
-          <div class="trust-item">
-            <div class="trust-title">Accept Trip</div>
-            <div class="trust-desc">Planning checklist + progress</div>
-          </div>
-        </div>
-      </div>
 
-      <div class="hero-right">
-        <div class="card">
-          <div class="card-title">Example output</div>
-          <div class="card-body">
-            <div class="row"><span class="label">Trip</span><span class="value">7 days • Solo • Adventurous</span></div>
-            <div class="row"><span class="label">Budget</span><span class="value">$2,000</span></div>
-            <div class="row"><span class="label">Destination</span><span class="value">Surprise me ✨</span></div>
-
-            <hr/>
-
-            <div class="scores">
-              <div class="score"><div class="score-num">88</div><div class="score-name">Confidence</div></div>
-              <div class="score"><div class="score-num">90</div><div class="score-name">Safety</div></div>
-              <div class="score"><div class="score-num">85</div><div class="score-name">Health</div></div>
+          <div class="card-mid">
+            <div class="mini-grid">
+              <div class="mini">
+                <div class="mini-num">88</div>
+                <div class="mini-label">Confidence</div>
+              </div>
+              <div class="mini">
+                <div class="mini-num">90</div>
+                <div class="mini-label">Safety</div>
+              </div>
+              <div class="mini">
+                <div class="mini-num">85</div>
+                <div class="mini-label">Health</div>
+              </div>
             </div>
 
-            <hr/>
-
-            <div class="mini">
-              <div class="mini-title">Planning Mode checklist</div>
+            <div class="list">
+              <div class="list-title">Planning Mode checklist</div>
               <ul>
-                <li>⬜ Book lodging (best area suggested)</li>
-                <li>⬜ Book 1–2 must‑do tours</li>
-                <li>⬜ Get eSIM + travel insurance</li>
-                <li>⬜ Pack essentials checklist</li>
+                <li><span class="box"></span> Book lodging (best area suggested)</li>
+                <li><span class="box"></span> Book 1–2 must‑do tours</li>
+                <li><span class="box"></span> Get eSIM + travel insurance</li>
+                <li><span class="box"></span> Pack essentials checklist</li>
               </ul>
-              <div class="mini-foot">Designed to make affiliate links feel helpful (not ads).</div>
             </div>
           </div>
-        </div>
 
-        <div class="fineprint">
-          Disclosure: Some links may be affiliate links. We may earn a commission at no extra cost to you.
+          <div class="card-foot">
+            <div class="muted small">
+              Disclosure: Some links may be affiliate links. We may earn a commission at no extra cost to you.
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="how" class="section">
-      <h2>How it works</h2>
-      <div class="grid">
-        <div class="feature">
-          <h3>1) Tell us your constraints</h3>
-          <p>Budget, dates, lodging style, vibe, and how adventurous you want it to be.</p>
-        </div>
-        <div class="feature">
-          <h3>2) We assemble your itinerary</h3>
-          <p>Curated City Packs + AI assembly for pacing, variety, and beginner guidance.</p>
-        </div>
-        <div class="feature">
-          <h3>3) Accept your trip</h3>
-          <p>Lock it in and switch to Planning Mode: bookings + packing checklist + progress meter.</p>
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h3>Tell us your constraints</h3>
+              <p>Budget, dates, vibe, travel style, and how adventurous you want it to be.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h3>We assemble your itinerary</h3>
+              <p>Curated city data + AI assembly for pacing, variety, and beginner guidance.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h3>Accept your trip</h3>
+              <p>Lock it in and switch to Planning Mode: bookings + packing checklist + progress.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="features" class="section">
-      <h2>What you’ll get</h2>
-      <div class="grid">
-        <div class="feature">
-          <h3>Complete day-by-day plan</h3>
-          <p>Morning/Afternoon/Evening blocks with realistic pacing and time estimates.</p>
-        </div>
-        <div class="feature">
-          <h3>Cost breakdown</h3>
-          <p>Lodging, food, activities, transport, and buffer — built to stay within budget.</p>
-        </div>
-        <div class="feature">
-          <h3>Preparation checklist</h3>
-          <p>Book what matters and pack the right essentials. No clutter, no ads.</p>
+      <div class="container">
+        <h2>What you get</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Complete day‑by‑day plan</h3>
+            <p>Realistic pacing with time estimates and clear morning/afternoon/evening blocks.</p>
+          </div>
+          <div class="feature">
+            <h3>Costs that make sense</h3>
+            <p>A simple breakdown for lodging, food, activities, transport, and buffer — built to stay on budget.</p>
+          </div>
+          <div class="feature">
+            <h3>Preparation checklist</h3>
+            <p>Book what matters and pack the right essentials. No clutter. No ads.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="waitlist" class="section waitlist">
-      <div class="waitlist-card">
-        <h2>Join the waitlist</h2>
-        <p>Drop your email and we’ll notify you when early access opens.</p>
+    <section id="waitlist" class="section">
+      <div class="container">
+        <div class="waitlist">
+          <div>
+            <h2>Join the waitlist</h2>
+            <p class="muted">Get notified when early access opens. No spam.</p>
+          </div>
 
-        <!-- No backend required: opens user email client -->
-        <form class="form" onsubmit="return handleWaitlist(event)">
-          <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required />
-          <button type="submit" class="primary">Notify me</button>
-        </form>
+          <form class="waitlist-form" onsubmit="return handleWaitlist(event)">
+            <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+            <button class="btn btn-primary" type="submit">Notify me</button>
+          </form>
 
-        <div id="status" class="status" aria-live="polite"></div>
-        <div class="note">By joining, you agree we can email you about early access. No spam.</div>
+          <div id="status" class="muted small" aria-live="polite"></div>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <div>© <span id="year"></span> WanderW</div>
-      <div class="footer-links">
-        <a href="#" onclick="alert('Add your Privacy Policy link here.'); return false;">Privacy</a>
-        <a href="#" onclick="alert('Add your Terms link here.'); return false;">Terms</a>
-        <a href="#" onclick="alert('Add your contact email here.'); return false;">Contact</a>
-      </div>
-      <div class="disclosure">
-        Disclosure: Some links may be affiliate links. We may earn a commission at no extra cost to you.
+      <div class="container footer-inner">
+        <div class="muted small">© <span id="year"></span> Wonderly</div>
+        <div class="footer-links muted small">
+          <a href="#" onclick="alert('Add your Privacy Policy link here.'); return false;">Privacy</a>
+          <a href="#" onclick="alert('Add your Terms link here.'); return false;">Terms</a>
+          <a href="#" onclick="alert('Add your contact email here.'); return false;">Contact</a>
+        </div>
+        <div class="muted small footer-disclosure">
+          Disclosure: Some links may be affiliate links. We may earn a commission at no extra cost to you.
+        </div>
       </div>
     </footer>
   </main>
